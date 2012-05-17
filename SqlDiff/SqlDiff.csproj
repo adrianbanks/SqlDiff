@@ -59,9 +59,19 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\SolutionInfo.cs">
+      <Link>SolutionInfo.cs</Link>
+    </Compile>
     <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="HashCodeUtil.cs" />
+    <Compile Include="SchemaItems\Column.cs" />
+    <Compile Include="SchemaItems\Schema.cs" />
+    <Compile Include="SchemaItems\Table.cs" />
+    <Compile Include="SchemaItems\Trigger.cs" />
+    <Compile Include="SchemaItems\View.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">

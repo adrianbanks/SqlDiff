@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("SqlDiff Console")]
+[assembly: AssemblyTitle("SqlDiff Tests")]
 [assembly: AssemblyDescription("")]
-[assembly: Guid("B52A1EC3-C71B-430F-928C-6ACBDF951B2B")]
+[assembly: Guid("E0CF332E-466A-44CB-A857-A1B6CC8BF716")]
