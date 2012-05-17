@@ -1,6 +1,14 @@
-# Build Folders (you can keep bin if you'd like, to store dlls and pdbs)
-bin
-obj
+# user-specific files
+*.suo
+*.user
+*.csproj.user
+*.dotCover
+*.jtconfig
+*.tmp_proj
+*.cache
+_ReSharper.*
 
-# mstest test results
-TestResults
+
+# output folders
+[bB]in/
+[oO]bj/
