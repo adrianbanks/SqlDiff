@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlDiff", "SqlDiff\SqlDiff.csproj", "{E4E12075-85EB-4763-AC29-9240018A8BD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlDiffConsole", "SqlDiffConsole\SqlDiffConsole.csproj", "{C59FC67C-4676-49EF-A12F-C68CC599BB69}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4E12075-85EB-4763-AC29-9240018A8BD8}.Debug|x86.ActiveCfg = Debug|x86
+		{E4E12075-85EB-4763-AC29-9240018A8BD8}.Debug|x86.Build.0 = Debug|x86
+		{E4E12075-85EB-4763-AC29-9240018A8BD8}.Release|x86.ActiveCfg = Release|x86
+		{E4E12075-85EB-4763-AC29-9240018A8BD8}.Release|x86.Build.0 = Release|x86
+		{C59FC67C-4676-49EF-A12F-C68CC599BB69}.Debug|x86.ActiveCfg = Debug|x86
+		{C59FC67C-4676-49EF-A12F-C68CC599BB69}.Debug|x86.Build.0 = Debug|x86
+		{C59FC67C-4676-49EF-A12F-C68CC599BB69}.Release|x86.ActiveCfg = Release|x86
+		{C59FC67C-4676-49EF-A12F-C68CC599BB69}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
