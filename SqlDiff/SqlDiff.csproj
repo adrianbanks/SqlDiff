@@ -100,6 +100,27 @@
       <Link>SolutionInfo.cs</Link>
     </Compile>
     <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="HashCodeUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ListExtensions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SchemaItems\Column.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SchemaItems\Schema.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SchemaItems\Table.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SchemaItems\Trigger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SchemaItems\View.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">

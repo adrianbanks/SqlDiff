@@ -42,6 +42,16 @@
       <Link>SolutionInfo.cs</Link>
     </Compile>
     <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="BaseEqualityTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ListExtensionsTest.cs" />
+    <Compile Include="SchemaItems\ColumnTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SchemaItems\TableTest.cs" />
+    <Compile Include="SchemaItems\TriggerTest.cs" />
+    <Compile Include="SchemaItems\ViewTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SqlDiff\SqlDiff.csproj">
