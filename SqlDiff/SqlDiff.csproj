@@ -100,12 +100,17 @@
       <Link>SolutionInfo.cs</Link>
     </Compile>
     <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Comparison\ComparisonObject.cs" />
+    <Compile Include="Comparison\ComparisonType.cs" />
+    <Compile Include="Comparison\ObjectType.cs" />
+    <Compile Include="Comparison\Report.cs" />
     <Compile Include="HashCodeUtil.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="ListExtensions.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="SchemaComparer.cs" />
     <Compile Include="SchemaItems\Column.cs">
       <SubType>Code</SubType>
     </Compile>

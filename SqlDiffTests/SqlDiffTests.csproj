@@ -45,6 +45,7 @@
     <Compile Include="BaseEqualityTest.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Comparison\ReportTest.cs" />
     <Compile Include="ListExtensionsTest.cs" />
     <Compile Include="SchemaItems\ColumnTest.cs">
       <SubType>Code</SubType>
