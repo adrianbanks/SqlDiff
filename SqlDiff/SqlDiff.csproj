@@ -110,6 +110,7 @@
     <Compile Include="ListExtensions.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Logger.cs" />
     <Compile Include="SchemaComparer.cs" />
     <Compile Include="SchemaItems\Column.cs">
       <SubType>Code</SubType>
