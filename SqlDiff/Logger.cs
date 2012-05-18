@@ -12,7 +12,7 @@ namespace AdrianBanks.SqlDiff
         void Info(string message, params object[] args);
     }
 
-    internal sealed class Logger : ILogger
+    public sealed class Logger : ILogger
     {
         private readonly ILog log;
 

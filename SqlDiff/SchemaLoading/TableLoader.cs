@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using System.Data;
+﻿using System.Data;
+using System.Collections.Generic;
 using AdrianBanks.SqlDiff.SchemaItems;
 
 namespace AdrianBanks.SqlDiff.SchemaLoading

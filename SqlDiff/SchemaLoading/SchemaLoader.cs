@@ -3,7 +3,7 @@ using AdrianBanks.SqlDiff.SchemaItems;
 
 namespace AdrianBanks.SqlDiff.SchemaLoading
 {
-    internal sealed class SchemaLoader
+    public sealed class SchemaLoader
     {
         private readonly ILogger logger;
 
@@ -12,7 +12,7 @@ namespace AdrianBanks.SqlDiff.SchemaLoading
             this.logger = logger;
         }
 
-        internal Schema LoadSchema(SqlConnectionStringBuilder connectionString)
+        public Schema LoadSchema(SqlConnectionStringBuilder connectionString)
         {
             logger.Verbose("Opening connection to database...");
 
@@ -26,8 +26,30 @@ namespace AdrianBanks.SqlDiff.SchemaLoading
                 var tables = tableLoader.Load(connection);
                 logger.Debug("Tables loaded successfully");
 
-                return new Schema(tables, null, null);
+                ColumnLoader columnLoader = new ColumnLoader(logger);
+
+                foreach (var table in tables)
+                {
+                    var columns = columnLoader.Load(connection, table);
+                    table.AddColumns(columns);
+                }
+
+                var views = LoadViews(connection);
+                var triggers = LoadTriggers(connection);
+                return new Schema(tables, views, triggers);
             }
+        }
+
+        private View[] LoadViews(SqlConnection connection)
+        {
+            var viewLoader = new ViewLoader(logger);
+            return viewLoader.Load(connection);
+        }
+
+        private Trigger[] LoadTriggers(SqlConnection connection)
+        {
+            var viewLoader = new TriggerLoader(logger);
+            return viewLoader.Load(connection);
         }
     }
 }

@@ -127,12 +127,16 @@
     <Compile Include="SchemaItems\View.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="SchemaLoading\ColumnLoader.cs" />
     <Compile Include="SchemaLoading\SchemaLoader.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="SchemaLoading\SystemTypeConverter.cs" />
     <Compile Include="SchemaLoading\TableLoader.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="SchemaLoading\TriggerLoader.cs" />
+    <Compile Include="SchemaLoading\ViewLoader.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
